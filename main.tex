@@ -1,6 +1,7 @@
 \documentclass[a4paper,12pt,final,oneside]{article}
 
 \usepackage{report}
+\usepackage{textpos}
 
 % Author
 \newcommand{\reporttitle}{Contes et jeux de rôles}
@@ -27,18 +28,16 @@
 	\setcounter{page}{1}
 	
 	% Content
-	\include{introduction}
+	\include{01_introduction}
 	
-	\include{contes}
+	\include{02_contes}
 	
-	\include{jdr}
+	\include{03_jdr}
 	
-	\include{comparison}
+	\include{04_comparison}
 	
-	\include{conclusion}
+	\include{05_conclusion}
 	
-	\section{Bibliographie}
-	\def\section*#1{} % Supprime le titre "References" et l'espace qui lui etait alloue
 	\bibliography{references}
 	
 	%Gilles Brougère
