@@ -1,6 +1,7 @@
 \documentclass[a4paper,12pt,final,oneside]{article}
 
 \usepackage{report}
+\usepackage{quotation}
 \usepackage{textpos}
 
 % Author
@@ -14,26 +15,6 @@
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
 
-%Quotation
-\usepackage{libertine}
-\usepackage{graphicx}
-\usepackage[svgnames]{xcolor}
-\usepackage{framed}
-
-\newcommand*\openquote{\makebox(25,-22){\scalebox{5}{``}}}
-\newcommand*\closequote{\makebox(25,-22){\scalebox{5}{''}}}
-\colorlet{shadecolor}{White}
-
-\makeatletter
-\newif\if@right
-\def\shadequote{\@righttrue\shadequote@i}
-\def\shadequote@i{\begin{snugshade}\begin{quote}\openquote}
-\def\endshadequote{%
-  \if@right\hfill\fi\closequote\end{quote}\end{snugshade}}
-\@namedef{shadequote*}{\@rightfalse\shadequote@i}
-\@namedef{endshadequote*}{\endshadequote}
-\makeatother
-
 \begin{document}
 
 	% Title page
@@ -44,12 +25,9 @@
 	\thispagestyle{empty}
 	\tableofcontents
 	\clearpage
-	
 	\setcounter{page}{1}
 	
 	% Content
-
-
 	\include{01_introduction}
 	
 	\include{02_contes}
@@ -61,9 +39,4 @@
 	\include{05_conclusion}
 	
 	\bibliography{references}
-	
-	%Gilles Brougère
-	%Brian Sutton-Smith
-	%Jacques Henriot
-
 \end{document}
